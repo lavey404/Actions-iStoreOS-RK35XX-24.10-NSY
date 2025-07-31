@@ -60,6 +60,15 @@ echo -e "\\ndefine Device/bdy_g18-pro
 endef
 TARGET_DEVICES += bdy_g18-pro" >> target/linux/rockchip/image/legacy.mk
 
+# 增加wxy-oec-turbo-4g
+echo -e "\\ndefine Device/rk3566-wxy-oec-turbo-4g
+\$(call Device/Legacy/rk3566,\$(1))
+  DEVICE_VENDOR := WXY
+  DEVICE_MODEL := OEC
+  DEVICE_DTS := rk3568/rk3566-wxy-oec-turbo-4g.dts
+  DEVICE_PACKAGES += kmod-nvme kmod-ata-ahci-dwc kmod-thermal kmod-switch-rtl8306 kmod-switch-rtl8366-smi kmod-switch-rtl8366rb kmod-switch-rtl8366s kmod-hwmon-pwmfan kmod-r8169 kmod-switch-rtl8367b swconfig kmod-swconfig kmod-mt7615-firmware
+endef
+TARGET_DEVICES += rk3566-wxy-oec-turbo-4g" >> target/linux/rockchip/image/legacy.mk
 
 rm -f target/linux/generic/hack-6.6/744-rtl8366_smi-fix-ce-debugfs.patch
 
@@ -88,3 +97,5 @@ cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3588-orangepi-5-plus.dts target/linux/
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568-nsy-g68-plus.dts target/linux/rockchip/dts/rk3568/rk3568-nsy-g68-plus.dts
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568-nsy-g16-plus.dts target/linux/rockchip/dts/rk3568/rk3568-nsy-g16-plus.dts
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568-bdy-g18-pro.dts target/linux/rockchip/dts/rk3568/rk3568-bdy-g18-pro.dts
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3566-wxy-oec-turbo-4g.dts target/linux/rockchip/dts/rk3568/rk3566-wxy-oec-turbo-4g.dts
+
