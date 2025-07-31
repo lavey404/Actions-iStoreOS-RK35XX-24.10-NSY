@@ -65,7 +65,7 @@ echo -e "\\ndefine Device/rk3566-wxy-oec-turbo-4g
 \$(call Device/Legacy/rk3566,\$(1))
   DEVICE_VENDOR := WXY
   DEVICE_MODEL := OEC
-  DEVICE_DTS := rk3568/rk3566-wxy-oec-turbo-4g.dts
+  DEVICE_DTS := rk3568/rk3566-wxy-oec-turbo-4g
   DEVICE_PACKAGES += kmod-nvme kmod-ata-ahci-dwc kmod-thermal kmod-switch-rtl8306 kmod-switch-rtl8366-smi kmod-switch-rtl8366rb kmod-switch-rtl8366s kmod-hwmon-pwmfan kmod-r8169 kmod-switch-rtl8367b swconfig kmod-swconfig kmod-mt7615-firmware
 endef
 TARGET_DEVICES += rk3566-wxy-oec-turbo-4g" >> target/linux/rockchip/image/legacy.mk
