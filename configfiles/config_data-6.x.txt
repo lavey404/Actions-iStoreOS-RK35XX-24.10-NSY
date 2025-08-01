@@ -1,4 +1,7 @@
 CONFIG_TARGET_DEVICE_rockchip_armv8_DEVICE_rockchip_rk3566-wxy-oec-turbo-4g=y
+CONFIG_KERNEL_GIT_CLONE_URI="https://github.com/unifreq/linux-6.12.y"
+CONFIG_KERNEL_GIT_REF="master"
+CONFIG_KERNEL_AUTOUPDATE=n
 
 CONFIG_PACKAGE_lm-sensors=y
 CONFIG_PACKAGE_lm-sensors-detect=y
