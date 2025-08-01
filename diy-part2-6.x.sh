@@ -98,5 +98,7 @@ cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568-nsy-g68-plus.dts target/linux/roc
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568-nsy-g16-plus.dts target/linux/rockchip/dts/rk3568/rk3568-nsy-g16-plus.dts
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568-bdy-g18-pro.dts target/linux/rockchip/dts/rk3568/rk3568-bdy-g18-pro.dts
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3566.dtsi target/linux/rockchip/dts/rk3568/rk3566.dtsi
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3566-base.dtsi target/linux/rockchip/dts/rk3568/rk3566-base.dtsi
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk356x-base.dtsi target/linux/rockchip/dts/rk3568/rk356x-base.dtsi
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3566-wxy-oec-turbo-4g.dts target/linux/rockchip/dts/rk3568/rk3566-wxy-oec-turbo-4g.dts
 
