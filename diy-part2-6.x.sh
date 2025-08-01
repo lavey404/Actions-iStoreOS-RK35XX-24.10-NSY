@@ -100,5 +100,6 @@ cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568-bdy-g18-pro.dts target/linux/rock
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3566.dtsi target/linux/rockchip/dts/rk3568/rk3566.dtsi
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3566-base.dtsi target/linux/rockchip/dts/rk3568/rk3566-base.dtsi
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk356x-base.dtsi target/linux/rockchip/dts/rk3568/rk356x-base.dtsi
+cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3568-pinctrl.dtsi target/linux/rockchip/dts/rk3568/rk3568-pinctrl.dtsi
 cp -f $GITHUB_WORKSPACE/configfiles/dts/rk3566-wxy-oec-turbo-4g.dts target/linux/rockchip/dts/rk3568/rk3566-wxy-oec-turbo-4g.dts
 
